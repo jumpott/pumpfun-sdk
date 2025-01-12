@@ -6,7 +6,6 @@ use serde::Deserialize;
 use serde_json::{json, Value};
 use std::str::FromStr;
 use std::time::Duration;
-use tokio::sync::Mutex;
 use anchor_client::solana_sdk::{
     commitment_config::CommitmentConfig,
     pubkey::Pubkey,

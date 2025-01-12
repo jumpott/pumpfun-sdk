@@ -10,7 +10,12 @@ keywords = ["solana", "memecoins", "pumpfun", "pumpfun-sdk", "cpi"]
 readme = "README.md"
 
 [lib]
+name="mai3_pumpfun_sdk"
 crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "mai3_pumpfun_sdk_cli"
+path = "src/main.rs"
 
 [dependencies]
 anchor-client = {git = "https://github.com/coral-xyz/anchor", package = "anchor-client", features = ["async"]}
